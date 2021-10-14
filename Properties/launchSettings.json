@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Ardelean_Adelin_Lab2": {
+      "commandName": "Project"
+    },
+    "newProfile1": {
+      "commandName": "Executable"
+    }
+  }
+}
