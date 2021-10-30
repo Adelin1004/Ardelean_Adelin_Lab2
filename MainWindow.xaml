@@ -25,7 +25,7 @@
             <Canvas HorizontalAlignment="Left" Height="100" Margin="183,-60,-195,0" VerticalAlignment="Top" Width="100" d:IsHidden="True"/>
         </GroupBox>
         <Label x:Name="lblQuantity" Content="Quantity" HorizontalAlignment="Left" Margin="37,219,0,0" VerticalAlignment="Top" Width="58"/>
-        <TextBox x:Name="txtQuantity" HorizontalAlignment="Left" Height="18" Margin="109,223,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="55" IsReadOnly="True" TextAlignment="Right"/>
+        <TextBox x:Name="txtQuantity" HorizontalAlignment="Left" Height="18" Margin="109,223,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="55" IsReadOnly="True" TextAlignment="Right" KeyUp="txtQuantity_KeyUp"/>
         <Label x:Name="lblType" Content="Type" HorizontalAlignment="Left" Margin="203,220,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.216,0.586"/>
         <ComboBox x:Name="cmbType" HorizontalAlignment="Left" Margin="251,223,0,0" VerticalAlignment="Top" Width="146" Height="19" RenderTransformOrigin="0.485,0.686"/>
         <Label x:Name="lblPrice" Content="Price" HorizontalAlignment="Left" Margin="414,221,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.852,0.711"/>
@@ -39,7 +39,7 @@
 
         <Menu x:Name="menu_pizza" HorizontalAlignment="Left" Height="19" VerticalAlignment="Top" Width="81">
             <MenuItem Header="File">
-                <MenuItem Header="Exit"/>
+                <MenuItem Header="Exit" Click="MenuItem_Click"/>
             </MenuItem>
             <MenuItem Header="Pizza">
                 <MenuItem Header="Make">
@@ -49,7 +49,7 @@
                     <MenuItem x:Name="quatPizzaMenuItem" Header="Quattro Stagioni Pizza"/>
                     <MenuItem x:Name="canPizzaMenuItem" Header="Canibale Pizza"/>
                 </MenuItem>
-                <MenuItem Header="Stop"/>
+                <MenuItem Header="Stop" x:Name="mnuStop" Click="stopMenuItem_Click"/>
             </MenuItem>
         </Menu>
     </Grid>
