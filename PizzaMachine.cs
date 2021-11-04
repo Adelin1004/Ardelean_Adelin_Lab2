@@ -112,7 +112,7 @@ namespace Ardelean_Adelin_Lab2
             {
                 return mPrice;
             }
-            set
+            set 
             {
                 mPrice = value;
             }
